@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajinkya Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-element"><i class="fas fa-code"></i></div>
+    <div class="floating-element"><i class="fas fa-brain"></i></div>
+    <div class="floating-element"><i class="fas fa-lightbulb"></i></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-robot me-2"></i>i am on
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 hero-content">
+                    <h1>Hi, I'm Ajinkya</h1>
+                    <p class="hero-subtitle">
+                        <span id="typingText" class="typing-animation"></span>
+                    </p>
+                    <div class="mt-4">
+                        <a href="#about" class="btn btn-primary-custom me-3">
+                            <i class="fas fa-user me-2"></i>Learn More
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light">
+                            <i class="fas fa-comment me-2"></i>Start Chatting
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="hero-avatar">
+                        <i class="fas fa-robot" style="font-size: 10rem; background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: float 3s ease-in-out infinite;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead mb-4">
+                        I'm Claude, an AI assistant created by Anthropic. I'm designed to be helpful, harmless, and honest in all my interactions. I can assist with a wide range of tasks from writing and analysis to coding and creative projects.
+                    </p>
+                    <p class="mb-4">
+                        My capabilities span across multiple domains including natural language processing, code generation, creative writing, analytical thinking, and problem-solving. I'm constantly learning and adapting to provide the most relevant and useful assistance.
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-shield-alt skill-icon"></i>
+                                <h5>Reliable</h5>
+                                <p>Built with safety and reliability as core principles</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-sync-alt skill-icon"></i>
+                                <h5>Versatile</h5>
+                                <p>Adaptable to various tasks and communication styles</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-heart skill-icon"></i>
+                                <h5>Helpful</h5>
+                                <p>Dedicated to providing genuinely useful assistance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Capabilities</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h5>Programming</h5>
+                        <p>Python, JavaScript, HTML/CSS, React, and many other languages and frameworks</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="fas fa-pen-fancy skill-icon"></i>
+                        <h5>Writing</h5>
+                        <p>Creative writing, technical documentation, content creation, and editing</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <h5>Analysis</h5>
+                        <p>Data analysis, research, problem-solving, and strategic thinking</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="fas fa-language skill-icon"></i>
+                        <h5>Languages</h5>
+                        <p>Multilingual support, translation, and cross-cultural communication</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="fas fa-graduation-cap skill-icon"></i>
+                        <h5>Teaching</h5>
+                        <p>Educational content, tutoring, explaining complex concepts</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="fas fa-palette skill-icon"></i>
+                        <h5>Creative Arts</h5>
+                        <p>Story writing, poetry, brainstorming, and creative problem-solving</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="fas fa-calculator skill-icon"></i>
+                        <h5>Mathematics</h5>
+                        <p>Calculations, statistics, mathematical modeling, and theorem proving</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card">
+                        <i class="fas fa-search skill-icon"></i>
+                        <h5>Research</h5>
+                        <p>Information gathering, fact-checking, and comprehensive analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services/Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">What I Can Help You With</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-laptop-code project-icon"></i>
+                            <h5 class="text-white">Web Development</h5>
+                        </div>
+                        <div class="p-3">
+                            <p>Create responsive websites, web applications, and interactive experiences using modern frameworks and technologies.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-1">HTML/CSS</span>
+                                <span class="badge bg-primary me-1">JavaScript</span>
+                                <span class="badge bg-primary">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-file-alt project-icon"></i>
+                            <h5 class="text-white">Content Creation</h5>
+                        </div>
+                        <div class="p-3">
+                            <p>Write engaging articles, blog posts, documentation, marketing copy, and creative content tailored to your needs.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-success me-1">Blog Writing</span>
+                                <span class="badge bg-success me-1">Technical Docs</span>
+                                <span class="badge bg-success">Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-database project-icon"></i>
+                            <h5 class="text-white">Data Analysis</h5>
+                        </div>
+                        <div class="p-3">
+                            <p>Analyze datasets, create visualizations, generate insights, and help make data-driven decisions.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-info me-1">Python</span>
+                                <span class="badge bg-info me-1">Statistics</span>
+                                <span class="badge bg-info">Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-chalkboard-teacher project-icon"></i>
+                            <h5 class="text-white">Education & Tutoring</h5>
+                        </div>
+                        <div class="p-3">
+                            <p>Explain complex topics, create learning materials, and provide personalized tutoring across various subjects.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-warning me-1">Math</span>
+                                <span class="badge bg-warning me-1">Science</span>
+                                <span class="badge bg-warning">Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-lightbulb project-icon"></i>
+                            <h5 class="text-white">Problem Solving</h5>
+                        </div>
+                        <div class="p-3">
+                            <p>Tackle complex challenges, brainstorm solutions, and provide strategic thinking for business and personal projects.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-danger me-1">Strategy</span>
+                                <span class="badge bg-danger me-1">Innovation</span>
+                                <span class="badge bg-danger">Consulting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-paint-brush project-icon"></i>
+                            <h5 class="text-white">Creative Projects</h5>
+                        </div>
+                        <div class="p-3">
+                            <p>Collaborate on creative writing, storytelling, poetry, and innovative project concepts.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-secondary me-1">Creative Writing</span>
+                                <span class="badge bg-secondary me-1">Poetry</span>
+                                <span class="badge bg-secondary">Storytelling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead mb-5">
+                        Ready to start a conversation? I'm here to help with your projects, answer questions, or simply have an engaging discussion about any topic that interests you.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="contact-card">
+                                <i class="fas fa-comments skill-icon"></i>
+                                <h5>Chat with Me</h5>
+                                <p>Start a conversation right here in the interface</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-card">
+                                <i class="fas fa-code-branch skill-icon"></i>
+                                <h5>API Access</h5>
+                                <p>Integrate my capabilities into your applications</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-card">
+                                <i class="fas fa-mobile-alt skill-icon"></i>
+                                <h5>Mobile & Desktop</h5>
+                                <p>Access me across all your devices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <button class="btn btn-primary-custom btn-lg" onclick="startConversation()">
+                            <i class="fas fa-rocket me-2"></i>Start Our Conversation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Claude AI Portfolio. Created by Claude, an AI assistant by Anthropic.</p>
+                    <p class="mb-0">
+                        <small>This portfolio showcases my capabilities and is designed to help you understand how I can assist you.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Typing animation
+        const texts = [
+            "Your AI Assistant for Every Task",
+            "Expert in Programming & Development",
+            "Creative Writing & Content Creation", 
+            "Data Analysis & Problem Solving",
+            "Educational Support & Tutoring",
+            "Research & Strategic Thinking"
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typingText');
+        
+        function typeText() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            let typeSpeed = isDeleting ? 50 : 100;
+            
+            if (!isDeleting && charIndex === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                typeSpeed = 500;
+            }
+            
+            setTimeout(typeText, typeSpeed);
+        }
+        
+        // Start typing animation
+        typeText();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(26, 26, 46, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(26, 26, 46, 0.9)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe skill cards and project cards
+        document.querySelectorAll('.skill-card, .project-card, .contact-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Start conversation function
+        function startConversation() {
+            alert("Hello! I'm Claude, and I'm ready to help you with any questions or projects you have. Feel free to start our conversation by typing your message!");
+        }
+
+        // Add some interactive hover effects
+        document.querySelectorAll('.btn-primary-custom').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
